@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-n1+m9fp^3i)7%p9)+md7j!r_6wdg_u1#anef%ohe#6uao9blln
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0','localhost']
+ALLOWED_HOSTS = ['0.0.0.0','localhost','127.0.0.1']
 
 
 # Application definition
@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'api_app',
+    'Movies',
 ]
 
 MIDDLEWARE = [
@@ -51,7 +51,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'api_project.urls'
+ROOT_URLCONF = 'movie_api.urls'
 
 TEMPLATES = [
     {
@@ -69,7 +69,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'api_project.wsgi.application'
+WSGI_APPLICATION = 'movie_api.wsgi.application'
 
 
 # Database
